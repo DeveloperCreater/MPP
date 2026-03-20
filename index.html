@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>M++ Download</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #111;
+            font-family: Arial, sans-serif;
+        }
+
+        button {
+            padding: 20px 40px;
+            font-size: 20px;
+            background-color: #00ff88;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: 0.2s;
+        }
+
+        button:hover {
+            background-color: #00cc6a;
+        }
+    </style>
+</head>
+<body>
+
+<button onclick="downloadFile()">Download M++</button>
+
+<script>
+function downloadFile() {
+    const link = document.createElement('a');
+    link.href = "https://github.com/DeveloperCreater/MPP/raw/refs/heads/main/installer/Output/Mpp-Setup.exe";
+    link.download = "Mpp-Setup.exe";
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+}
+</script>
+
+</body>
+</html>
