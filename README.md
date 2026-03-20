@@ -1,4 +1,4 @@
-# M++ — The Ultimate Computer Language
+# M++ — Open Source Programing Language
 
 **M++** fuses the strengths of **C++**, **JavaScript**, and **Python** into a single, expressive programming language.
 
