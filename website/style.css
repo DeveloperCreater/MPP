@@ -1,0 +1,96 @@
+body {
+    margin: 0;
+    font-family: "Segoe UI", Arial;
+    background: #0f172a;
+    color: white;
+}
+
+/* NAVBAR */
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 40px;
+    background: #020617;
+}
+
+nav a {
+    color: #94a3b8;
+    margin-left: 20px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: white;
+}
+
+/* HERO */
+.hero {
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.hero h1 {
+    font-size: 50px;
+}
+
+.hero p {
+    color: #94a3b8;
+    margin-bottom: 30px;
+}
+
+/* BUTTON */
+.btn {
+    background: #2563eb;
+    padding: 15px 30px;
+    border-radius: 10px;
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.btn:hover {
+    background: #1d4ed8;
+}
+
+.btn.big {
+    font-size: 20px;
+    padding: 20px 40px;
+}
+
+/* FEATURES */
+.features {
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.grid {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: #1e293b;
+    padding: 30px;
+    border-radius: 15px;
+    width: 250px;
+}
+
+/* DOWNLOAD PAGE */
+.download-page {
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.note {
+    color: #64748b;
+    margin-top: 20px;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 20px;
+    color: #64748b;
+}
