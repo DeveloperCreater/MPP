@@ -1,8 +1,5 @@
 # M++ — Open Source Programing Language
 
-**M++** fuses the strengths of **C++**, **JavaScript**, and **Python** into a single, expressive programming language.
-
-**Professional release goal:** the **primary runtime is C++**. Python exists only as a secondary reference/tooling path.
 
 ## Quick Start
 
