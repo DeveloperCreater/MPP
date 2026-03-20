@@ -1,36 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>M++ Download</title>
-    <style>
-        body {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            background-color: #111;
-            font-family: Arial, sans-serif;
-        }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>M++ Programming Language</title>
 
-        button {
-            padding: 20px 40px;
-            font-size: 20px;
-            background-color: #00ff88;
-            border: none;
-            border-radius: 10px;
-            cursor: pointer;
-            transition: 0.2s;
-        }
+<style>
+    body {
+        margin: 0;
+        font-family: "Segoe UI", Arial, sans-serif;
+        background: linear-gradient(135deg, #0f172a, #1e293b);
+        color: white;
+    }
 
-        button:hover {
-            background-color: #00cc6a;
-        }
-    </style>
+    .container {
+        text-align: center;
+        padding: 80px 20px;
+    }
+
+    h1 {
+        font-size: 48px;
+        margin-bottom: 10px;
+    }
+
+    .subtitle {
+        font-size: 18px;
+        color: #94a3b8;
+        margin-bottom: 40px;
+    }
+
+    .card {
+        background: rgba(255, 255, 255, 0.05);
+        padding: 40px;
+        border-radius: 20px;
+        display: inline-block;
+        backdrop-filter: blur(10px);
+        box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+        max-width: 500px;
+    }
+
+    .version {
+        color: #38bdf8;
+        font-weight: bold;
+        margin-bottom: 20px;
+    }
+
+    .desc {
+        font-size: 16px;
+        color: #cbd5f5;
+        margin-bottom: 30px;
+        line-height: 1.6;
+    }
+
+    .download-btn {
+        padding: 15px 30px;
+        font-size: 18px;
+        background: linear-gradient(90deg, #22c55e, #4ade80);
+        border: none;
+        border-radius: 12px;
+        cursor: pointer;
+        color: black;
+        font-weight: bold;
+        transition: 0.3s;
+    }
+
+    .download-btn:hover {
+        transform: scale(1.05);
+        box-shadow: 0 0 20px #22c55e;
+    }
+
+    .footer {
+        margin-top: 50px;
+        font-size: 14px;
+        color: #64748b;
+    }
+</style>
 </head>
+
 <body>
 
-<button onclick="downloadFile()">Download M++</button>
+<div class="container">
+    <h1>M++</h1>
+    <div class="subtitle">A Powerful Custom Programming Language</div>
+
+    <div class="card">
+        <div class="version">Version 1.1.0</div>
+
+        <div class="desc">
+            M++ is a fast, flexible, and modern programming language designed for building powerful applications,
+            system tools, and future-ready software. Simple syntax, high performance, and endless possibilities.
+        </div>
+
+        <button class="download-btn" onclick="downloadFile()">
+            ⬇ Download M++ Installer
+        </button>
+    </div>
+
+    <div class="footer">
+        © 2026 M++ Project • Built by You 🚀
+    </div>
+</div>
 
 <script>
 function downloadFile() {
