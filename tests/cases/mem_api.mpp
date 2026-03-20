@@ -1,0 +1,4 @@
+﻿print(typeof(mem_alloc))
+let p = mem_alloc(4)
+mem_write8(p, 0, 255)
+print(mem_read8(p, 0))

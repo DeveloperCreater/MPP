@@ -1,0 +1,11 @@
+{
+  "name": "mpp",
+  "private": true,
+  "version": "1.0.0",
+  "description": "M++ tooling (JS test runner)",
+  "scripts": {
+    "test:dist": "node tools/run_tests.js --runner \"dist\\\\mpp.exe -r\"",
+    "test:cpp": "node tools/run_tests.js --runner \"cpp\\\\mpp.exe -r\""
+  }
+}
+

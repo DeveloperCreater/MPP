@@ -1,0 +1,5 @@
+let a = "Hi"
+let b = " there"
+print(a + b)
+let obj = { name: "M++" }
+print(obj.name)

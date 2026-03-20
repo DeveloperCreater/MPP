@@ -1,0 +1,2 @@
+﻿print(typeof(exec))
+print(len(range(5)))

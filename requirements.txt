@@ -1,0 +1,2 @@
+# M++ — Runtime: no external dependencies (Python 3.7+)
+# To build .exe: pip install pyinstaller
