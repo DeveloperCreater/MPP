@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>M++ Terminal UI (C++ Host)</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="app">
+      <header class="header">
+        <div class="title">M++ Terminal UI</div>
+        <div class="subtitle">Native C++ host + HTML/CSS/JS + M++ runtime</div>
+      </header>
+
+      <section class="panel">
+        <div class="row">
+          <label class="label" for="input">Input</label>
+          <input id="input" class="input" placeholder="Type something..." />
+        </div>
+
+        <div class="buttons">
+          <button id="btnHello" class="btn primary">Hello (M++)</button>
+          <button id="btnEcho" class="btn">Echo (M++)</button>
+          <button id="btnExec" class="btn">exec() (host)</button>
+          <button id="btnClear" class="btn danger">Clear</button>
+        </div>
+      </section>
+
+      <section class="terminal">
+        <div class="termHeader">Output</div>
+        <pre id="output" class="output"></pre>
+      </section>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
+

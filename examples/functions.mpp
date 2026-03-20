@@ -1,0 +1,12 @@
+// Functions — First-class like JavaScript, clean like Python
+fn add(a, b) { a + b }
+fn mul(a, b) { a * b }
+
+let ops = [add, mul]
+print(ops[0](2, 3))  // 5
+print(ops[1](2, 3))  // 6
+
+// Arrow-style closure
+fn apply(f, x) { f(x) }
+let double = fn(x) => x * 2
+print(apply(double, 21))  // 42

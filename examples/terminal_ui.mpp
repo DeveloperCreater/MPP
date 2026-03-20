@@ -1,0 +1,30 @@
+// Terminal UI logic as reusable functions (for window app + CLI)
+
+fn hello(name) { "Hello, " + name }
+fn echo(text) { "Echo: " + text }
+
+// Keep a small CLI mode too
+fn prompt(msg) { print(msg); input("> ") }
+
+print("M++ Terminal Demo (CLI)")
+print("1) Hello")
+print("2) Echo")
+print("3) Exec Python")
+print("4) Exit")
+
+let choice = prompt("Choose an option (1-4):")
+
+if (choice == "1") {
+    let name = prompt("Your name?")
+    print(hello(name))
+}
+elif (choice == "2") {
+    let t = prompt("Text?")
+    print(echo(t))
+}
+elif (choice == "3") {
+    print(exec("python -c \"print(6*7)\""))
+}
+else {
+    print("Bye")
+}

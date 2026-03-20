@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>M++ Terminal UI</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="app">
+      <header class="header">
+        <div class="title">M++ Terminal UI</div>
+        <div class="subtitle">HTML + CSS + JS + M++ backend (+ optional C++)</div>
+      </header>
+
+      <section class="panel">
+        <div class="row">
+          <label class="label" for="input">Input</label>
+          <input id="input" class="input" placeholder="Type something..." />
+        </div>
+
+        <div class="buttons">
+          <button id="btnHello" class="btn primary">Hello</button>
+          <button id="btnEcho" class="btn">Echo (M++)</button>
+          <button id="btnExecPy" class="btn">Exec Python</button>
+          <button id="btnExecCpp" class="btn">Exec C++ mpp.exe</button>
+          <button id="btnClear" class="btn danger">Clear</button>
+        </div>
+      </section>
+
+      <section class="terminal">
+        <div class="termHeader">Output</div>
+        <pre id="output" class="output"></pre>
+      </section>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
+

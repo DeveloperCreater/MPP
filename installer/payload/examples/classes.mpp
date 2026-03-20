@@ -1,0 +1,17 @@
+// OOP — C++-style classes, Python-style simplicity
+class Person {
+    pub name
+    priv age
+
+    fn init(self, name, age) {
+        self.name = name
+        self.age = age
+    }
+
+    fn greet(self) {
+        print("Hello, I am " + self.name)
+    }
+}
+
+let p = new Person("Alice", 30)
+p.greet()

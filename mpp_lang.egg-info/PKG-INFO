@@ -1,0 +1,112 @@
+Metadata-Version: 2.4
+Name: mpp-lang
+Version: 1.0.0
+Summary: M++ — The Ultimate Computer Language
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+
+# M++ — The Ultimate Computer Language
+
+**M++** fuses the strengths of **C++**, **JavaScript**, and **Python** into a single, expressive programming language.
+
+## Quick Start
+
+**Option A — Install and use `mpp` command:**
+```bash
+cd M++
+pip install -e .
+mpp -r examples/hello.mpp
+mpp -e "print('Hello, M++')"
+```
+
+**Option B — Build standalone .exe (no Python needed to run):**
+```bash
+cd M++
+python build_exe.py
+dist\mpp.exe -r examples\hello.mpp
+```
+Copy `dist\mpp.exe` to a folder in your PATH to use `mpp` anywhere.
+
+## Features
+
+| From C++ | From JavaScript | From Python |
+|----------|-----------------|-------------|
+| Optional static typing | Dynamic flexibility | Clean, readable syntax |
+| C-style `for` loops | First-class functions | Implicit returns |
+| Classes with pub/priv | Arrow functions `=>` | List literals `[1,2,3]` |
+| Braces `{}` blocks | Object literals `{a:1}` | Comments `//` |
+
+## Syntax Examples
+
+### Variables & Functions
+```mpp
+let x = 42
+let y: int = 100
+
+fn add(a, b) { a + b }
+fn double => x * 2
+```
+
+### Control Flow
+```mpp
+for (let i = 0; i < 10; i = i + 1) {
+    print(i)
+}
+
+for (x in [1, 2, 3]) {
+    print(x)
+}
+
+if (x > 0) { print("positive") }
+elif (x < 0) { print("negative") }
+else { print("zero") }
+```
+
+### Classes
+```mpp
+class Person {
+    pub name
+    priv age
+
+    fn init(self, name, age) {
+        self.name = name
+        self.age = age
+    }
+
+    fn greet(self) {
+        print("Hello, " + self.name)
+    }
+}
+
+let p = new Person("Alice", 30)
+p.greet()
+```
+
+### Built-ins
+- `print(...)` — output
+- `len(x)` — length of array or string
+- `range(n)` — `[0, 1, ..., n-1]`
+- `typeof(x)` — type string
+
+## Project Structure
+
+```
+M++/
+├── mpp/
+│   ├── lexer.py      # Tokenizer
+│   ├── parser.py     # AST builder
+│   ├── ast.py        # AST nodes
+│   └── interpreter.py# Runtime
+├── examples/
+│   ├── hello.mpp
+│   ├── fibonacci.mpp
+│   ├── classes.mpp
+│   └── functions.mpp
+├── run.py            # Entry point
+├── SPEC.md           # Full specification
+└── README.md
+```
+
+## Requirements
+
+- Python 3.7+

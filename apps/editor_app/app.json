@@ -1,0 +1,9 @@
+{
+  "name": "MppEditor",
+  "title": "M++ Editor (Demo)",
+  "width": 1100,
+  "height": 760,
+  "entry": "ui/index.html",
+  "backend": "app.mpp"
+}
+

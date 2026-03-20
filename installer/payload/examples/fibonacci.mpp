@@ -1,0 +1,10 @@
+// Fibonacci — Python-style elegance with C++ control
+fn fib(n) {
+    if (n <= 1) { n }
+    else { fib(n - 1) + fib(n - 2) }
+}
+
+print("Fibonacci sequence:")
+for (let i = 0; i < 15; i = i + 1) {
+    print(fib(i))
+}

@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512">
+  <!-- Flat version for reliable ICO conversion (no gradients/filters) -->
+  <!-- Transparent background -->
+
+  <!-- Document -->
+  <path d="M112 64h200l88 88v296a32 32 0 0 1-32 32H112a32 32 0 0 1-32-32V96a32 32 0 0 1 32-32z"
+        fill="#111827" stroke="#0ea5e9" stroke-width="6" />
+
+  <!-- Fold -->
+  <path d="M312 64v88a32 32 0 0 0 32 32h88"
+        fill="#0f172a" />
+  <path d="M312 64l120 120" stroke="#38bdf8" stroke-width="6" opacity="0.8"/>
+
+  <!-- M++ text -->
+  <text x="256" y="320"
+        text-anchor="middle"
+        font-family="Segoe UI, Inter, Arial, sans-serif"
+        font-size="120"
+        font-weight="800"
+        fill="#ffffff"
+        letter-spacing="-2">M++</text>
+  <rect x="164" y="350" width="184" height="10" rx="5" fill="#0ea5e9"/>
+</svg>
+

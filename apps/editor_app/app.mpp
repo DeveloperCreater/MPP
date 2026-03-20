@@ -1,0 +1,11 @@
+// M++ Editor backend (demo)
+// This file is meant to be loaded by the native C++ app host.
+
+fn hello(name) { "Hello, " + name }
+
+fn stats(text) {
+    // Simple JS-like helper from M++
+    let n = len(text)
+    "chars=" + n
+}
+
